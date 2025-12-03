@@ -7,7 +7,7 @@
 
     static void Main()
     {
-        Console.WriteLine("TASK 2:Delegate");
+        Console.WriteLine("TASK 2: Custom Delegate");
 
         Operations ops = new Operations();
 
@@ -21,7 +21,9 @@
         // Discount strategy
         Discounts d = new Discounts();
 
-
+        Console.WriteLine("Festival Discount: " + d.FestivalDiscount(1000));
+        Console.WriteLine("Seasonal Discount: " + d.SeasonalDiscount(1000));
+        Console.WriteLine("No Discount: " + d.NoDiscount(1000));
 
         Console.WriteLine("\n TASK 2.1: Discount Strategy");
 
